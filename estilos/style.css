@@ -52,7 +52,7 @@ nav#menu a:hover {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 90vh 1fr;
+  grid-template-columns: auto 90vw auto;
 }
 
 section#ficha {
