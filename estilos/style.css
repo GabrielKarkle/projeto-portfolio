@@ -54,6 +54,9 @@ main {
   display: grid;
   grid-template-columns: auto 90vw auto;
 }
+section  {
+ grid-column: 2;
+}
 
 section#ficha {
   background-color: var(--fundo-card);
@@ -97,4 +100,72 @@ div#social a{
 div#social a:hover {
   color: var(--destaque-inverso);
   transition: 0.5s;
+}
+
+aside {
+  background-color: var(--fundo-card);
+  margin: 15px 0px 15px 0px;
+  border-radius: 10px;
+  width: 90vw;
+  padding: 20px;
+}
+
+aside > h2, h3 {
+  padding: 10px;
+  color: var(--destaque);
+}
+
+#container-video {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+#container-video iframe {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+#container-skills {
+  display: grid;
+  grid-template-columns: 1 fr;
+  gap: 30px;
+  
+}
+
+/*container de informaçoes das skills */
+#container-skills #info {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#container-skills #info > .nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+#container-skills #info > .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#container-skills #barra {
+  background-color: var(--fundo-principal);
+  height: 10px; 
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+#container-skills #progres {
+  height: 100%;
+  background-color: var(--destaque);
+}
+
+@media screen and (min-width:768px){
+  #container-skills {
+    grid-template-columns: 1fr 1fr;
+  }
+  
 }
