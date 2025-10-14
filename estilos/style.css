@@ -169,3 +169,41 @@ aside > h2, h3 {
   }
   
 }
+
+/*-----formaçao----*/
+
+#container-form {
+ gap: 15px;
+ display: flex;
+ flex-direction: column-reverse;
+ 
+}
+
+#container-form #curso {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  margin-top: 5px;
+  padding: 5px;
+  border-left: 8px solid var(--destaque-inverso);
+}
+#container-form .ano {
+  font-size: 1.1em;
+  font-weight: bold;
+
+}
+#container-form .inst {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--destaque);
+  padding: 4px 0px 4px 0px;
+
+}
+#container-form .estudo {
+ /*nenhuma alteraçao*/
+}
+
+#container-form #curso:hover{
+  border-left: 25px solid var(--destaque);
+  transition: border-width 0.7s, border-color 0.7s;
+  cursor: pointer;
+}
